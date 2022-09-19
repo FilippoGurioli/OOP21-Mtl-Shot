@@ -133,7 +133,7 @@ public class GameView extends Scene {
         pt.play();
 
         final TranslateTransition btt = new TranslateTransition(Duration.millis(1), this.background);
-        btt.setToX(cameraManager.getOffset() * MapConstants.getTilesize() - cameraManager.HORIZONTALDEFAULT);
+        btt.setToX(cameraManager.getOffset() * MapConstants.getTilesize() - CameraManager.HORIZONTALDEFAULT);
         final ParallelTransition bpt = new ParallelTransition();
         bpt.getChildren().add(btt);
         bpt.play();
